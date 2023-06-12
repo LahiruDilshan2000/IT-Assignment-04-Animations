@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>IT-Module-Assigment 02</title>
+    <link rel="stylesheet" href="assets/fontsAwesome/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(to top, rgb(15 23 42) 40%, #282B64 40%);
+        }
+        .header{
+            width: 100%;
+            text-align: center;
+        }
+        .header h1{
+            font-size: 2.5em;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 3px;
+            font-weight: bolder;
+            padding-top: 50px;
+        }
+        .container{
+            width: 100%;
+            padding: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .asg-card {
+            width: 180px;
+            height: 180px;
+            background: #282B64;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            margin: 15px 25px;
+            text-align: center;
+            transition: ease-in-out 0.5s;
+            cursor: pointer;
+            position: relative;
+        }
+        .asg-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+        .asg-card p {
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 2px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        .asg-card p:nth-child(2){
+            margin-top: 5px;
+        }
+        .asg-card:hover p {
+            color: rgba(255, 255, 255, 1);
+        }
+        .asg-card a {
+            width: 35px;
+            height: 35px;
+            border: 2.5px solid orangered;
+            background: transparent;
+            border-radius: 50%;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: -12px;
+            padding: 6px;
+            transition: ease-in-out 0.5s;
+            transition-delay: 0.2s;
+            opacity: 0;
+            z-index: 20;
+        }
+        .asg-card a i {
+            color: #fff;
+            font-size: 0;
+            margin: 0;
+            transition: all 0.3s;
+            transition-delay: 0.7s;
+            transform: translateX(-60px);
+        }
+
+        .asg-card:hover a {
+            transform: translateX(75px);
+            opacity: 1;
+        }
+
+        .asg-card:hover a i{
+            font-size: 1.1em;
+            transform: translateX(0px);
+        }
+        .asg-card a span {
+            width: 0%;
+            height: 0%;
+            background: orangered;
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transition: ease-in-out 0.3s;
+        }
+
+        .asg-card a:hover span {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="header">
+        <h1>Assignments of Animation</h1>
+    </div>
+    <div class="container">
+        <div class="asg-card">
+            <p>Assignment 4 case 1</p>
+            <p>Transition Nav</p>
+            <a href="Asg-04-case_01_transition_for_navigation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="asg-card">
+            <p>Assignment 4 case 2</p>
+            <p>Circle border <br>transition</p>
+            <a href="Asg-04-case_02_circle_border_transition.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="asg-card">
+            <p>Assignment 4 case 3</p>
+            <p>Rotation animation</p>
+            <a href="Asg-04-case_03_rotation_with_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="asg-card">
+            <p>Assignment 4 case 4</p>
+            <p>Water drop animation</p>
+            <a href="Asg-04-case_04_water_drop_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="asg-card">
+            <p>Assignment 4 case 5</p>
+            <p>Image slider</p>
+            <a href="Asg-04-case_05_Image_slider.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="asg-card">
+            <p>Assignment 4 case 6</p>
+            <p>Car Animation</p>
+            <a href="Asg-04-case_06_car_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="asg-card">
+            <p>Assignment 9</p>
+            <p>Knight Rider Kit Animation</p>
+            <a href="Asg-09-Knight_Rider_Kit_Animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+</body>
+</html>

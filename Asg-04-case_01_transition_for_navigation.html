@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/fontsAwesome/css/all.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        section{
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section > div{
+            position: relative;
+            margin-bottom:10px;
+            margin-top:10px;
+            width: 200px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            transition-duration: 500ms;
+            right: 160px;
+        }
+        section > div > h3 {
+            position: absolute;
+            width: max-content;
+            height: max-content;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section > div > i{
+            position: absolute;
+            width: max-content;
+            height: max-content;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section > div:hover{
+            right: 0;
+            background-color: purple;
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div><h3>Menu One</h3><i class="fa-solid fa-address-book"></i></div>
+    <div><h3>Menu Two</h3><i class="fa-solid fa-truck-medical"></i></div>
+    <div><h3>Menu Three</h3><i class="fa-solid fa-truck-medical"></i></div>
+    <div><h3>Menu Four</h3><i class="fa-solid fa-layer-group"></i></div>
+    <div><h3>Menu Five</h3><i class="fa-solid fa-cart-plus"></i></div>
+</section>
+</body>
+</html>
