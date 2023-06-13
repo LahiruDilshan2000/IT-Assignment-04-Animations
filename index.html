@@ -55,6 +55,7 @@
             transition: ease-in-out 0.5s;
             cursor: pointer;
             position: relative;
+            padding: 50px 20px;
         }
         .asg-card:hover {
             transform: scale(1.05);
@@ -62,19 +63,25 @@
         }
         .asg-card p {
             font-size: 0.8em;
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(0, 255, 255, 0.5);
             font-family: 'Roboto', sans-serif;
             letter-spacing: 2px;
             font-weight: 400;
             line-height: 22px;
-            margin-top: 20px;
             transition: all 0.3s;
+        }
+        .asg-card p:first-child{
+            font-size: 0.7em;
+            color: rgba(255, 255, 255, 0.7);
         }
         .asg-card p:nth-child(2){
             margin-top: 5px;
         }
         .asg-card:hover p {
             color: rgba(255, 255, 255, 1);
+        }
+        .asg-card:hover p:nth-child(2) {
+            color: rgba(0, 255, 255, 1);
         }
         .asg-card a {
             width: 35px;
@@ -135,43 +142,38 @@
 <body>
 <section>
     <div class="header">
-        <h1>Assignments of Animation</h1>
+        <h1>Assignment 4 Basic Animations</h1>
     </div>
     <div class="container">
         <div class="asg-card">
-            <p>Assignment 4 case 1</p>
+            <p>Case 1</p>
             <p>Transition Nav</p>
             <a href="Asg-04-case_01_transition_for_navigation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
-            <p>Assignment 4 case 2</p>
+            <p>Case 2</p>
             <p>Circle border <br>transition</p>
             <a href="Asg-04-case_02_circle_border_transition.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
-            <p>Assignment 4 case 3</p>
+            <p>Case 3</p>
             <p>Rotation animation</p>
             <a href="Asg-04-case_03_rotation_with_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
-            <p>Assignment 4 case 4</p>
+            <p>Case 4</p>
             <p>Water drop animation</p>
             <a href="Asg-04-case_04_water_drop_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
-            <p>Assignment 4 case 5</p>
+            <p>Case 5</p>
             <p>Image slider</p>
             <a href="Asg-04-case_05_Image_slider.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
-            <p>Assignment 4 case 6</p>
+            <p>Case 6</p>
             <p>Car Animation</p>
             <a href="Asg-04-case_06_car_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="asg-card">
-            <p>Assignment 9</p>
-            <p>Knight Rider Kit Animation</p>
-            <a href="Asg-09-Knight_Rider_Kit_Animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 </section>
