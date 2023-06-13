@@ -36,6 +36,14 @@
             font-weight: bolder;
             padding-top: 50px;
         }
+        .header h2{
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.5);
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 3px;
+            font-weight: 400;
+            padding-top: 10px;
+        }
         .container{
             width: 100%;
             padding: 100px;
@@ -55,14 +63,15 @@
             transition: ease-in-out 0.5s;
             cursor: pointer;
             position: relative;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
         .asg-card:hover {
+            padding: 30px 20px;
             transform: scale(1.05);
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
         }
         .asg-card p {
-            font-size: 0.8em;
+            font-size: 0.7em;
             color: rgba(0, 255, 255, 0.5);
             font-family: 'Roboto', sans-serif;
             letter-spacing: 2px;
@@ -83,7 +92,7 @@
         .asg-card:hover p:nth-child(2) {
             color: rgba(0, 255, 255, 1);
         }
-        .asg-card a {
+        .asg-card .git-page {
             width: 35px;
             height: 35px;
             border: 2.5px solid orangered;
@@ -99,7 +108,7 @@
             opacity: 0;
             z-index: 20;
         }
-        .asg-card a i {
+        .asg-card .git-page i {
             color: #fff;
             font-size: 0;
             margin: 0;
@@ -108,16 +117,16 @@
             transform: translateX(-60px);
         }
 
-        .asg-card:hover a {
+        .asg-card:hover .git-page {
             transform: translateX(75px);
             opacity: 1;
         }
 
-        .asg-card:hover a i{
+        .asg-card:hover .git-page i{
             font-size: 1.1em;
             transform: translateX(0px);
         }
-        .asg-card a span {
+        .asg-card .git-page span {
             width: 0%;
             height: 0%;
             background: orangered;
@@ -132,48 +141,48 @@
             transition: ease-in-out 0.3s;
         }
 
-        .asg-card a:hover span {
+        .asg-card .git-page:hover span {
             width: 100%;
             height: 100%;
         }
-
     </style>
 </head>
 <body>
 <section>
     <div class="header">
-        <h1>Assignment 4 Basic Animations</h1>
+        <h1>Assignment 04</h1>
+        <h2>Basic Animations Using Html Css</h2>
     </div>
     <div class="container">
         <div class="asg-card">
             <p>Case 1</p>
             <p>Transition Nav</p>
-            <a href="Asg-04-case_01_transition_for_navigation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Asg-04-case_01_transition_for_navigation.html" class="git-page"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
             <p>Case 2</p>
             <p>Circle border <br>transition</p>
-            <a href="Asg-04-case_02_circle_border_transition.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Asg-04-case_02_circle_border_transition.html" class="git-page"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
             <p>Case 3</p>
             <p>Rotation animation</p>
-            <a href="Asg-04-case_03_rotation_with_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Asg-04-case_03_rotation_with_animation.html" class="git-page"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
             <p>Case 4</p>
             <p>Water drop animation</p>
-            <a href="Asg-04-case_04_water_drop_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Asg-04-case_04_water_drop_animation.html" class="git-page"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
             <p>Case 5</p>
             <p>Image slider</p>
-            <a href="Asg-04-case_05_Image_slider.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Asg-04-case_05_Image_slider.html" class="git-page"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="asg-card">
             <p>Case 6</p>
             <p>Car Animation</p>
-            <a href="Asg-04-case_06_car_animation.html"><span></span><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Asg-04-case_06_car_animation.html" class="git-page"><span></span><i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 </section>
