@@ -1,138 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Car Animation</title>
-
+    <title>Title</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        section{
-
-        }
-        .sky{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
+        main{
+            position: fixed;
+            width: 100vw;
             height: 100vh;
-        }
+            top: 0;
+            left: 0;
 
-        .road{
+            overflow-x:hidden ;
+            overflow-y: hidden;
+        }
+        main>section:nth-child(1){
+            background-image: url("assets/images/sky.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 75vh;
+
+        }
+        main>section:nth-child(2){
+            width: 400vw;
+            height: 300px;
+            display: flex;
+            position: absolute;
+            top: calc(75vh - 250px);
+            left: 0;
+
+            animation-name: vehicle-animation;
+            animation-duration:10s;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+
+        }
+        main>section:nth-child(2)>div{
+            width: 100vw;
+            height: 250px;
+
+        }
+        main>section:nth-child(2)>div:nth-child(1){
+            background-image: url("assets/images/city.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section:nth-child(2)>div:nth-child(2){
+            background-image: url("assets/images/city.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section:nth-child(2)>div:nth-child(3){
+            background-image: url("assets/images/city.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section:nth-child(2)>div:nth-child(4){
+            background-image: url("assets/images/city.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section:nth-child(3){
+
+            width: 400vw;
+            height: 25vh;
+            display: flex;
             position: absolute;
             left: 0;
             bottom: 0;
 
-            background-repeat: no-repeat   ;
-            animation-name: roadani;
-            animation-duration: 5s;
+            animation-name: vehicle-animation;
+            animation-duration:10s;
+            animation-play-state: running;
             animation-iteration-count: infinite;
             animation-direction: normal;
+
+        }
+        main>section:nth-child(3)>div{
+            width: 100vw;
+            height: 25vh;
+        }
+        main>section:nth-child(3)>div:nth-child(1){
+            background-image: url("assets/images/road.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section:nth-child(3)>div:nth-child(2){
+            background-image: url("assets/images/road.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section:nth-child(3)>div:nth-child(3){
+            background-image: url("assets/images/road.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main>section:nth-child(3)>div:nth-child(4){
+            background-image: url("assets/images/road.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
-        .city1{
+        main>section:nth-child(4)>div:nth-child(1){
+            width: 250px;
             position: absolute;
+            left: 0;
+            bottom: 0;
             right: 0;
-            top: 15vh;
+            top:calc(75vh - 50px);
+            margin: auto;
 
-            background-repeat: no-repeat   ;
-            animation-name: cityani;
-            animation-duration: 5s;
+        }
+        main>section:nth-child(4)>div:nth-child(2){
+            width: 45px;
+            position: relative;
+            left: 72px;
+            top: 4px;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+
+            animation-name: my-animation;
+            animation-duration:5s;
+            animation-play-state: running;
             animation-iteration-count: infinite;
-            animation-direction: normal;
-
+            animation-direction: alternate-reverse;
         }
+        main>section:nth-child(4)>div:nth-child(3){
+            width: 45px;
+            position: relative;
+            bottom: 41px;
+            right: 80px;
+            margin: auto;
 
-        .city2{
-            position: absolute;
-            left: 100vw;
-            top: 15vh;
-
-            background-repeat: no-repeat   ;
-            animation-name: cityani;
-            animation-duration: 5s;
+            animation-name: my-animation;
+            animation-duration:5s;
+            animation-play-state: running;
             animation-iteration-count: infinite;
-            animation-direction: normal;
+            animation-direction: alternate-reverse;
         }
-
-        .car{
-            position: absolute;
-            width: 35vw;
-            left: 35vw;
-            bottom: 25vh;
-        }
-
-        .wheel1{
-            position: absolute;
-            width: 7vw;
-            left: 38vw;
-            bottom: 26vh;
-
-            animation-name: wheelani;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-        }
-        .wheel2{
-            position: absolute;
-            width: 7vw;
-            left: 59vw;
-            bottom: 26vh;
-
-            animation-name: wheelani;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-        }
-
-        @keyframes roadani {
+        @keyframes my-animation {
             from{
-
-            }
-            to{
-                transform:translateX(-50%) ;
-            }
-        }
-
-        @keyframes cityani {
-            from{
-
-            }
-            to{
-                transform:translateX(-100%) ;
-            }
-        }
-
-        @keyframes wheelani {
-            from{
-
+                transform: rotate(0deg);
             }
             to{
                 transform: rotate(360deg);
-            }
 
+            }
+        }
+        @keyframes vehicle-animation {
+            from{
+                margin-left: -0%;
+
+            }
+            to{
+                margin-left: -299%;
+
+            }
         }
 
     </style>
+
 </head>
 <body>
-<section>
-    <img class="sky" src="../assets/images/sky.jpg" alt="sky">
-    <img class="road" src="../assets/images/road.jpg" alt="road">
-    <div>
-        <img class="city1" src="../assets/images/city.png" alt="city">
-        <img class="city2" src="../assets/images/city.png" alt="city">
-    </div>
-</section>
-<section>
-    <img class="car" src="assets/images/car.png" alt="car">
-    <img class="wheel1" src="assets/images/wheel.png" alt="wheel">
-    <img class="wheel2" src="assets/images/wheel.png" alt="wheel">
-</section>
+<main>
+    <section></section>
 
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section>
+        <div>
+            <img src="assets/images/car.png" alt="car.png" width="250">
+        </div>
+
+        <div>
+            <img src="assets/images/wheel.png" alt="wheel.png" width="45">
+        </div>
+        <div>
+            <img src="assets/images/wheel.png" alt="wheel.png" width="45">
+        </div>
+    </section>
+
+</main>
 </body>
 </html>
